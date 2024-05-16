@@ -205,4 +205,6 @@ h1{
 .login-button:hover {
     background-color: #0056b3;
 }
-
+.footer{
+    position: center;
+}

@@ -58,7 +58,7 @@ html,body{
     z-index: 1;
     transition: all 0,6s ease;
 }
-.slide-control label .signup{
+.slide-control label.signup{
     color: #000;
 }
 .slide-control .slide-tab{
@@ -72,5 +72,18 @@ html,body{
     transition: all 0,6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 input[type="radio"]{
-    display: ;
+    display: none;
+}
+#signup:checked ~ .slider-tab{
+    left: 50%;
+}
+#signup:checked ~ label .login{
+    color: #000;
+}
+#login:checked ~ label .signup{
+    color: #000;
+}
+#login:checked ~ label .login{
+    cursor: default;
+    user-select: none;
 }
